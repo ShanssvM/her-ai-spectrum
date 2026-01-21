@@ -7,30 +7,26 @@ import { Link } from "react-router-dom";
 
 const Index = () => {
   const values = [
-    /*{
+    {
       icon: <Sparkles className="w-6 h-6" />,
       title: "Innovation",
-      description:
-        "Pushing boundaries in AI research and development with diverse perspectives.",
+      description: "Pushing boundaries in AI research and development with diverse perspectives.",
     },
     {
       icon: <Users className="w-6 h-6" />,
       title: "Community",
-      description:
-        "Building a supportive network of women and allies in artificial intelligence.",
+      description: "Building a supportive network of women and allies in artificial intelligence.",
     },
     {
       icon: <Globe className="w-6 h-6" />,
       title: "Inclusion",
-      description:
-        "Ensuring AI development represents and benefits everyone, everywhere.",
+      description: "Ensuring AI development represents and benefits everyone, everywhere.",
     },
     {
       icon: <Lightbulb className="w-6 h-6" />,
       title: "Education",
-      description:
-        "Providing resources and mentorship to the next generation of AI leaders.",
-    },*/
+      description: "Providing resources and mentorship to the next generation of AI leaders.",
+    },
   ];
 
   return (
@@ -87,13 +83,15 @@ const Index = () => {
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Bridging the Gender Gap in AI</h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Her AI Spectrum exists to create meaningful change in the AI industry. We believe that diverse
-                perspectives lead to better, more ethical, and more innovative artificial intelligence.
+                Amplifying women and diverse innovators advancing AI through empowering, encouraging, and global
+                advocacy. We bridge the gap between technical brilliance and human truth—ensuring every walk of life
+                leads the revolution.
               </p>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                Through events, mentorship programs, and community building, we empower women and underrepresented
-                groups to take their rightful place at the forefront of AI development.
-              </p>
+              {/*<p className="text-muted-foreground text-lg leading-relaxed mb-8">
+                Through events, mentorship programs, and community building, we
+                empower women and underrepresented groups to take their rightful
+                place at the forefront of AI development.
+              </p>*/}
               <Button asChild variant="outline" className="prism-border">
                 <Link to="/testimonials">
                   Hear From Our Community

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const PastEvents = () => {
   const pastEvents = [
-    {
+    /*{
       title: "AI Leadership Summit 2024",
       date: "November 12, 2024",
       time: "9:00 AM - 6:00 PM PST",
@@ -67,7 +67,7 @@ const PastEvents = () => {
         "The launch event for our 2024 summer mentorship program, pairing 50 mentees with experienced AI professionals.",
       imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800",
       attendees: 110,
-    },
+    },*/
   ];
 
   return (
@@ -100,27 +100,19 @@ const PastEvents = () => {
           <GlassCard className="p-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold text-gradient-prism mb-2">
-                  25+
-                </div>
+                <div className="text-4xl font-bold text-gradient-prism mb-2">25+</div>
                 <div className="text-muted-foreground">Events Hosted</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-gradient-prism mb-2">
-                  2,000+
-                </div>
+                <div className="text-4xl font-bold text-gradient-prism mb-2">2,000+</div>
                 <div className="text-muted-foreground">Total Attendees</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-gradient-prism mb-2">
-                  100+
-                </div>
+                <div className="text-4xl font-bold text-gradient-prism mb-2">100+</div>
                 <div className="text-muted-foreground">Expert Speakers</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-gradient-prism mb-2">
-                  50+
-                </div>
+                <div className="text-4xl font-bold text-gradient-prism mb-2">50+</div>
                 <div className="text-muted-foreground">Partner Companies</div>
               </div>
             </div>
@@ -131,12 +123,9 @@ const PastEvents = () => {
       {/* CTA */}
       <section className="py-16">
         <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-4 font-sans">
-            Don't Miss Our Next Event
-          </h3>
+          <h3 className="text-2xl font-bold text-foreground mb-4 font-sans">Don't Miss Our Next Event</h3>
           <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-            Join us at one of our upcoming events to be part of the Her AI
-            Spectrum community.
+            Join us at one of our upcoming events to be part of the Her AI Spectrum community.
           </p>
           <Button asChild className="bg-hero-gradient hover:opacity-90">
             <Link to="/upcoming-events">

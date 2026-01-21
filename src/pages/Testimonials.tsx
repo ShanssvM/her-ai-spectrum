@@ -7,8 +7,7 @@ import { ArrowRight, MessageSquare } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [
-    {
-      /*{
+    /* {
       quote:
         "Her AI Spectrum completely changed my career trajectory. The mentorship I received helped me land my dream role as an ML Engineer at a top tech company. The community here is unlike anything else.",
       name: "Sarah Chen",
@@ -64,7 +63,6 @@ const Testimonials = () => {
       role: "AI Engineer",
       company: "Amazon",
     },*/
-    },
   ];
 
   return (

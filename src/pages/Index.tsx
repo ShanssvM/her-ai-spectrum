@@ -10,7 +10,9 @@ const Index = () => {
     {
       icon: <Sparkles className="w-6 h-6" />,
       title: "Innovation",
-      description: "Pushing boundaries in AI research and development with diverse perspectives.",
+      description: {
+        /*"Pushing boundaries in AI research and development with diverse perspectives."*/
+      },
     },
     {
       icon: <Users className="w-6 h-6" />,
@@ -51,8 +53,8 @@ const Index = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up delay-200">
-              A global community of women and leaders from every walk of life—advancing AI to ensure the revolution
-              reflects the humanity it serves
+              We're building a diverse community of women and underrepresented voices to shape the future of artificial
+              intelligence—together.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">

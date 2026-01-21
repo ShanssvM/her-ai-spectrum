@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Index = () => {
   const values = [
-    {
+    /*{
       icon: <Sparkles className="w-6 h-6" />,
       title: "Innovation",
       description: "Pushing boundaries in AI research and development with diverse perspectives.",
@@ -26,7 +26,7 @@ const Index = () => {
       icon: <Lightbulb className="w-6 h-6" />,
       title: "Education",
       description: "Providing resources and mentorship to the next generation of AI leaders.",
-    },
+    },*/
   ];
 
   return (

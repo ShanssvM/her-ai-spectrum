@@ -51,8 +51,8 @@ const Index = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up delay-200">
-              We're building a diverse community of women and underrepresented voices to shape the future of artificial
-              intelligence—together.
+              Her AI Spectrum is a global community empowering woman, girls, youth, and allies to learn, lead, and shape
+              AI through diversity and collaboration.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">

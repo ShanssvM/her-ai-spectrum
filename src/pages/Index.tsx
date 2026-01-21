@@ -87,11 +87,10 @@ const Index = () => {
                 advocacy. We bridge the gap between technical brilliance and human truth—ensuring every walk of life
                 leads the revolution.
               </p>
-              {/*<p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                Through events, mentorship programs, and community building, we
-                empower women and underrepresented groups to take their rightful
-                place at the forefront of AI development.
-              </p>*/}
+              <blockquote className="border-l-4 border-primary pl-4 my-6 italic text-muted-foreground">
+                "I believe in the future of AI changing the world. The question is, who is changing AI? It is really important to bring diverse groups of students and future leaders into the development of AI."
+                <footer className="mt-2 text-sm font-medium text-foreground not-italic">— Dr. Fei-Fei Li</footer>
+              </blockquote>
               <Button asChild variant="outline" className="prism-border">
                 <Link to="/testimonials">
                   Hear From Our Community
@@ -137,6 +136,11 @@ const Index = () => {
             title="A Future Where AI Reflects Everyone"
             subtitle="We envision an AI industry where women and underrepresented voices are not just included, but leading the way."
           />
+          
+          <blockquote className="max-w-3xl mx-auto text-center border-l-0 border-t border-b border-primary/20 py-6 my-8 italic text-lg text-muted-foreground">
+            "We need to inject humanism into our AI education and research by injecting all walks of life into the process."
+            <footer className="mt-3 text-sm font-medium text-foreground not-italic">— Dr. Fei-Fei Li</footer>
+          </blockquote>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (

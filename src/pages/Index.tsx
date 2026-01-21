@@ -82,7 +82,9 @@ const Index = () => {
                 Our Mission
               </span>
               */}
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Our Mission</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                <Center>Our Mission</Center>
+              </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 To empower a global community of women and allies to shape the future of AI through inclusive learning,
                 leadership, and a commitment to human-centric technology.

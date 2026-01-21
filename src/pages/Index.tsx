@@ -78,19 +78,20 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
+              {/* <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
                 Our Mission
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Bridging the Gender Gap in AI</h2>
+              </span>*/}
+
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Our Mission</h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Amplifying women and diverse innovators advancing AI through empowering, encouraging, and global
-                advocacy. We bridge the gap between technical brilliance and human truth—ensuring every walk of life
-                leads the revolution.
+                To empower a global community of women, youth and allies to shape the future of AI through inclusive
+                learning, leadership, and a commitment to human-centric technology.
               </p>
-              <blockquote className="border-l-4 border-primary pl-4 my-6 italic text-muted-foreground">
-                "I believe in the future of AI changing the world. The question is, who is changing AI? It is really important to bring diverse groups of students and future leaders into the development of AI."
-                <footer className="mt-2 text-sm font-medium text-foreground not-italic">— Dr. Fei-Fei Li</footer>
-              </blockquote>
+              {/*<p className="text-muted-foreground text-lg leading-relaxed mTo empower a global community of women and allies to shape the future of AI through inclusive learning, leadership, and a commitment to human-centric technology.b-8">
+                Through events, mentorship programs, and community building, we
+                empower women and underrepresented groups to take their rightful
+                place at the forefront of AI development.
+              </p>*/}
               <Button asChild variant="outline" className="prism-border">
                 <Link to="/testimonials">
                   Hear From Our Community
@@ -136,11 +137,6 @@ const Index = () => {
             title="A Future Where AI Reflects Everyone"
             subtitle="We envision an AI industry where women and underrepresented voices are not just included, but leading the way."
           />
-          
-          <blockquote className="max-w-3xl mx-auto text-center border-l-0 border-t border-b border-primary/20 py-6 my-8 italic text-lg text-muted-foreground">
-            "We need to inject humanism into our AI education and research by injecting all walks of life into the process."
-            <footer className="mt-3 text-sm font-medium text-foreground not-italic">— Dr. Fei-Fei Li</footer>
-          </blockquote>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (

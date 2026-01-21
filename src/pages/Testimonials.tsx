@@ -1,11 +1,50 @@
+import { useState } from "react";
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import TestimonialCard from "@/components/TestimonialCard";
 import GlassCard from "@/components/GlassCard";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { ArrowRight, MessageSquare } from "lucide-react";
-
 const Testimonials = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const subject = encodeURIComponent(`Testimonial from ${formData.firstName} ${formData.lastName}`);
+    const body = encodeURIComponent(
+      `First Name: ${formData.firstName}\nLast Name: ${formData.lastName}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+    
+    window.location.href = `mailto:heraispectrum@gmail.com?subject=${subject}&body=${body}`;
+    
+    setFormData({ firstName: "", lastName: "", email: "", message: "" });
+    setIsOpen(false);
+  };
+
   const testimonials = [
     /* {
       quote:
@@ -100,12 +139,69 @@ const Testimonials = () => {
             <p className="text-muted-foreground max-w-md mx-auto mb-8">
               Are you a member of Her AI Spectrum? We'd love to hear how the community has impacted your journey in AI.
             </p>
-            <Button asChild size="lg" className="bg-hero-gradient hover:opacity-90">
-              <a href="mailto:hello@heraispectrum.org">
-                Submit Your Testimonial
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </a>
-            </Button>
+            <Dialog open={isOpen} onOpenChange={setIsOpen}>
+              <DialogTrigger asChild>
+                <Button size="lg" className="bg-hero-gradient hover:opacity-90">
+                  Submit Your Testimonial
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-md">
+                <DialogHeader>
+                  <DialogTitle>Share Your Story</DialogTitle>
+                </DialogHeader>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="firstName">First Name</Label>
+                      <Input
+                        id="firstName"
+                        name="firstName"
+                        value={formData.firstName}
+                        onChange={handleInputChange}
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="lastName">Last Name</Label>
+                      <Input
+                        id="lastName"
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleInputChange}
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Email Address</Label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="message">Message</Label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      rows={4}
+                      required
+                    />
+                  </div>
+                  <Button type="submit" className="w-full bg-hero-gradient hover:opacity-90">
+                    Submit
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </form>
+              </DialogContent>
+            </Dialog>
           </GlassCard>
         </div>
       </section>

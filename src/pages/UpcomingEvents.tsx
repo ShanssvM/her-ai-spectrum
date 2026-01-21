@@ -18,28 +18,27 @@ const UpcomingEvents = () => {
       registrationLink: "https://www.linkedin.com/company/her-ai-spectrum",
     },
     {
-      title: "Women in Machine Learning Workshop",
-      date: "April 8, 2025",
+      title: "From Research to Real World: Building ",
+      date: "Feburary 13, 2026",
       time: "10:00 AM - 2:00 PM EST",
-      location: "New York, NY",
-      description:
-        "A hands-on workshop focused on practical ML techniques, featuring sessions led by women researchers from top tech companies and universities.",
+      location: "Virtual Event",
+      description: "Young Graduate...",
       imageUrl: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800",
       registrationLink: "https://www.linkedin.com/company/her-ai-spectrum",
     },
     {
-      title: "AI Career Networking Night",
-      date: "April 22, 2025",
+      title: "AI ",
+      date: "March 22, 2025",
       time: "6:00 PM - 9:00 PM PST",
-      location: "Seattle, WA",
+      location: "Virtual Event",
       description:
         "Connect with hiring managers, recruiters, and peers in AI. Perfect for job seekers, career changers, and anyone looking to expand their network.",
       imageUrl: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800",
       registrationLink: "https://www.linkedin.com/company/her-ai-spectrum",
     },
     {
-      title: "Generative AI Deep Dive",
-      date: "May 10, 2025",
+      title: "Learn from Leaders",
+      date: "March, 2025",
       time: "11:00 AM - 4:00 PM EST",
       location: "Virtual Event",
       description:
@@ -73,12 +72,8 @@ const UpcomingEvents = () => {
             </div>
           ) : (
             <GlassCard className="text-center py-16">
-              <p className="text-muted-foreground text-lg mb-4">
-                No upcoming events at the moment.
-              </p>
-              <p className="text-muted-foreground">
-                Check back soon or follow us on LinkedIn for updates!
-              </p>
+              <p className="text-muted-foreground text-lg mb-4">No upcoming events at the moment.</p>
+              <p className="text-muted-foreground">Check back soon or follow us on LinkedIn for updates!</p>
             </GlassCard>
           )}
         </div>
@@ -91,23 +86,12 @@ const UpcomingEvents = () => {
             <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-hero-gradient flex items-center justify-center text-white">
               <Bell size={28} />
             </div>
-            <h3 className="text-2xl font-bold text-foreground mb-4 font-sans">
-              Never Miss an Event
-            </h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 font-sans">Never Miss an Event</h3>
             <p className="text-muted-foreground max-w-md mx-auto mb-8">
-              Follow us on LinkedIn to stay updated on all our upcoming events,
-              workshops, and community gatherings.
+              Follow us on LinkedIn to stay updated on all our upcoming events, workshops, and community gatherings.
             </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-hero-gradient hover:opacity-90"
-            >
-              <a
-                href="https://www.linkedin.com/company/her-ai-spectrum"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <Button asChild size="lg" className="bg-hero-gradient hover:opacity-90">
+              <a href="https://www.linkedin.com/company/her-ai-spectrum" target="_blank" rel="noopener noreferrer">
                 Follow Us on LinkedIn
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>

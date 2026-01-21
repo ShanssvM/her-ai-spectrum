@@ -83,7 +83,7 @@ const Index = () => {
               </span>
               */}
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                <Center>Our Mission</Center>
+                <center>Our Mission</center>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 To empower a global community of women and allies to shape the future of AI through inclusive learning,
@@ -93,13 +93,13 @@ const Index = () => {
                 Through events, mentorship programs, and community building, we
                 empower women and underrepresented groups to take their rightful
                 place at the forefront of AI development.
-              </p>*/}
+              </p>
               <Button asChild variant="outline" className="prism-border">
                 {/*<Link to="/testimonials">
                   Hear From Our Community
                   <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>*/}
-              </Button>
+                </Link>*
+              </Button>*/}
             </div>
 
             <div className="order-1 lg:order-2">

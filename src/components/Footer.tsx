@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Mail, Heart } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -9,9 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-hero-gradient flex items-center justify-center">
-                <span className="text-white font-bold text-lg">H</span>
-              </div>
+              <img src={logo} alt="Her AI Spectrum" className="w-10 h-10 rounded-xl object-cover" />
               <span className="font-semibold text-lg text-foreground">
                 Her AI Spectrum
               </span>

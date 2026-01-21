@@ -164,10 +164,8 @@ const Index = () => {
       <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-6 lg:px-8">
           <SectionHeader
-            {/*badge="Our Vision"
-            title="A Future Where AI Reflects Everyone"*/}
-          title = "Our Vision"  
-          subtitle="To create a world where diversity is the heartbeat of artificial intelligence and every innovator has the power to lead."
+            title="Our Vision"
+            subtitle="To create a world where diversity is the heartbeat of artificial intelligence and every innovator has the power to lead."
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

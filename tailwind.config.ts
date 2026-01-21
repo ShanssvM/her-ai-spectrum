@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        serif: ['Playfair Display', 'Georgia', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +50,15 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        prism: {
+          red: "hsl(var(--prism-red))",
+          orange: "hsl(var(--prism-orange))",
+          yellow: "hsl(var(--prism-yellow))",
+          green: "hsl(var(--prism-green))",
+          blue: "hsl(var(--prism-blue))",
+          indigo: "hsl(var(--prism-indigo))",
+          violet: "hsl(var(--prism-violet))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

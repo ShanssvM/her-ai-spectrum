@@ -9,7 +9,7 @@ const UpcomingEvents = () => {
   const upcomingEvents = [
     {
       title: "AI Ethics & Governance Summit 2025",
-      date: "March 15, 2025",
+      date: "March 15, 2026",
       time: "9:00 AM - 5:00 PM PST",
       location: "San Francisco, CA + Virtual",
       description:
@@ -28,7 +28,7 @@ const UpcomingEvents = () => {
     },
     {
       title: "AI ",
-      date: "March 22, 2025",
+      date: "March 22, 2026",
       time: "6:00 PM - 9:00 PM PST",
       location: "Virtual Event",
       description:
@@ -38,7 +38,7 @@ const UpcomingEvents = () => {
     },
     {
       title: "Learn from Leaders",
-      date: "March, 2025",
+      date: "March, 2026",
       time: "11:00 AM - 4:00 PM EST",
       location: "Virtual Event",
       description:

@@ -8,6 +8,7 @@ import { ArrowRight, MessageSquare } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
+      /*{
       quote:
         "Her AI Spectrum completely changed my career trajectory. The mentorship I received helped me land my dream role as an ML Engineer at a top tech company. The community here is unlike anything else.",
       name: "Sarah Chen",
@@ -62,6 +63,7 @@ const Testimonials = () => {
       name: "Aisha Mohammed",
       role: "AI Engineer",
       company: "Amazon",
+    },*/
     },
   ];
 
@@ -96,18 +98,11 @@ const Testimonials = () => {
             <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-hero-gradient flex items-center justify-center text-white">
               <MessageSquare size={28} />
             </div>
-            <h3 className="text-2xl font-bold text-foreground mb-4 font-sans">
-              Share Your Story
-            </h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 font-sans">Share Your Story</h3>
             <p className="text-muted-foreground max-w-md mx-auto mb-8">
-              Are you a member of Her AI Spectrum? We'd love to hear how the
-              community has impacted your journey in AI.
+              Are you a member of Her AI Spectrum? We'd love to hear how the community has impacted your journey in AI.
             </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-hero-gradient hover:opacity-90"
-            >
+            <Button asChild size="lg" className="bg-hero-gradient hover:opacity-90">
               <a href="mailto:hello@heraispectrum.org">
                 Submit Your Testimonial
                 <ArrowRight className="ml-2 w-4 h-4" />
@@ -120,23 +115,12 @@ const Testimonials = () => {
       {/* Join CTA */}
       <section className="py-16">
         <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-4 font-sans">
-            Ready to Join This Amazing Community?
-          </h3>
+          <h3 className="text-2xl font-bold text-foreground mb-4 font-sans">Ready to Join This Amazing Community?</h3>
           <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-            Connect with hundreds of women in AI who are shaping the future of
-            technology.
+            Connect with hundreds of women in AI who are shaping the future of technology.
           </p>
-          <Button
-            asChild
-            size="lg"
-            className="bg-hero-gradient hover:opacity-90"
-          >
-            <a
-              href="https://www.linkedin.com/company/her-ai-spectrum"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <Button asChild size="lg" className="bg-hero-gradient hover:opacity-90">
+            <a href="https://www.linkedin.com/company/her-ai-spectrum" target="_blank" rel="noopener noreferrer">
               Join Her AI Spectrum
               <ArrowRight className="ml-2 w-4 h-4" />
             </a>

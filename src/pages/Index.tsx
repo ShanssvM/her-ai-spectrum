@@ -51,8 +51,9 @@ const Index = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up delay-200">
-              Her AI Spectrum is a global community empowering woman, girls, youth, and allies to learn, lead, and shape
-              AI through diversity and collaboration.
+              We are a global movement redefining the architecture of intelligence. By merging technical power with
+              human-centered wisdom, Her AI Spectrum empowers women and youth to not just adapt to the AI era—but to
+              design it.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
@@ -90,7 +91,8 @@ const Index = () => {
                 leadership, and a commitment to human-centric technology.
               </p>
               <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground text-base leading-relaxed">
-                "I believe in the future of AI changing the world. The question is, who is changing AI? It is really important to bring diverse groups of students and future leaders into the development of AI."
+                "I believe in the future of AI changing the world. The question is, who is changing AI? It is really
+                important to bring diverse groups of students and future leaders into the development of AI."
                 <footer className="mt-2 text-sm font-medium text-foreground not-italic">— Dr. Fei-Fei Li</footer>
               </blockquote>
               {/* <p className="text-muted-foreground text-lg leading-relaxed mb-8">

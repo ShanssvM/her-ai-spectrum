@@ -158,6 +158,19 @@ const OurPurpose = () => {
         </div>
       </section>
 
+      {/* Our Vision */}
+      <section className="py-20 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-4xl">
+          <SectionHeader title="Our Vision" subtitle="" />
+          <div className="glass-card p-8 md:p-12 mt-8">
+            <blockquote className="border-l-4 border-primary pl-6 italic text-lg md:text-xl text-muted-foreground leading-relaxed">
+              "We need to inject humanism into our AI education and research by injecting all walks of life into the process."
+              <footer className="mt-4 text-base font-medium text-foreground not-italic">— Dr. Fei-Fei Li</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

@@ -145,16 +145,13 @@ const Index = () => {
             subtitle="To create a world where diversity is the heartbeat of artificial intelligence and every innovator has the power to lead."
           />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => (
-              <GlassCard key={value.title} className={`text-center animate-fade-up delay-${(index + 1) * 100}`}>
-                <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-hero-gradient flex items-center justify-center text-white">
-                  {value.icon}
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2 font-sans">{value.title}</h3>
-                <p className="text-muted-foreground text-sm">{value.description}</p>
-              </GlassCard>
-            ))}
+          <div className="max-w-3xl mx-auto mt-8">
+            <GlassCard className="p-8 md:p-12">
+              <blockquote className="border-l-4 border-primary pl-6 italic text-lg md:text-xl text-muted-foreground leading-relaxed">
+                "We need to inject humanism into our AI education and research by injecting all walks of life into the process."
+                <footer className="mt-4 text-base font-medium text-foreground not-italic">— Dr. Fei-Fei Li</footer>
+              </blockquote>
+            </GlassCard>
           </div>
         </div>
       </section>

@@ -90,10 +90,10 @@ const Index = () => {
                 To empower a global community of women and allies to shape the future of AI through inclusive learning,
                 leadership, and a commitment to human-centric technology.
               </p>
-              <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground text-base leading-relaxed">
+              <blockquote className="border-l-4 border-primary pl-6 italic text-lg md:text-xl text-muted-foreground leading-relaxed">
                 "I believe in the future of AI changing the world. The question is, who is changing AI? It is really
                 important to bring diverse groups of students and future leaders into the development of AI."
-                <footer className="mt-2 text-sm font-medium text-foreground not-italic">— Dr. Fei-Fei Li</footer>
+                <footer className="mt-4 text-base font-medium text-foreground not-italic">— Dr. Fei-Fei Li</footer>
               </blockquote>
               {/* <p className="text-muted-foreground text-lg leading-relaxed mb-8">
                 Through events, mentorship programs, and community building, we

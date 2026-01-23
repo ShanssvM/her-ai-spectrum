@@ -148,6 +148,11 @@ const OurPurpose = () => {
               </div>
             </div>
 
+            {/* Takeaway */}
+            <p className="text-center text-white/70 text-lg italic mb-10">
+              Women's representation drops sharply at higher levels, highlighting barriers to leadership.
+            </p>
+
             {/* Metric Card */}
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center max-w-2xl mx-auto">
               <p className="text-2xl md:text-3xl font-serif font-bold text-white mb-6">

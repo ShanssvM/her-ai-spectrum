@@ -18,7 +18,9 @@ const OurPurpose = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6">
         <div className="container mx-auto max-w-4xl text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">Our Purpose</h1>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
+            Bridging the AI Intelligence and Equity Gap
+          </h1>
           <p className="text-lg text-muted-foreground">
             Artificial intelligence is everywhere — in healthcare, education, climate, jobs, and beyond. But without
             diverse perspectives, AI can overlook real problems and reinforce existing biases.

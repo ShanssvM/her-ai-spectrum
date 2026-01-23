@@ -19,7 +19,7 @@ const OurPurpose = () => {
       <section className="pt-32 pb-16 px-6">
         <div className="container mx-auto max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
-            Bridging the AI Participation and Equity Gap
+            Bridging the AI Participation and Opportunity Gap
           </h1>
           <p className="text-lg text-muted-foreground">
             Artificial intelligence is everywhere — in healthcare, education, climate, jobs, and beyond. But without
@@ -74,84 +74,76 @@ const OurPurpose = () => {
               Women represent nearly half of entry‑level roles but only about 29% at the executive level.
             </h3>
 
-            {/* Chart with Legend */}
-            <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
-              {/* Chart */}
-              <div className="h-80 md:h-96 flex-1 w-full">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart
-                    data={pipelineData}
-                    layout="vertical"
-                    margin={{ top: 20, right: 40, left: 20, bottom: 20 }}
-                    barGap={8}
-                  >
-                    <XAxis
-                      type="number"
-                      domain={[0, 100]}
-                      tick={{ fill: "white", fontSize: 12 }}
-                      axisLine={{ stroke: "hsl(215 20% 30%)" }}
-                      tickLine={{ stroke: "hsl(215 20% 30%)" }}
-                    />
-                    <YAxis
-                      type="category"
-                      dataKey="stage"
-                      tick={{ fill: "white", fontSize: 14, fontWeight: 500 }}
-                      axisLine={false}
-                      tickLine={false}
-                      width={100}
-                    />
-                    <Bar dataKey="women" name="Women" radius={[0, 8, 8, 0]} barSize={28}>
-                      {pipelineData.map((_, index) => (
-                        <Cell key={`women-${index}`} fill="url(#prismGradient)" />
-                      ))}
-                      <LabelList
-                        dataKey="women"
-                        position="right"
-                        formatter={(value: number) => `${value}%`}
-                        style={{ fill: "white", fontSize: 14, fontWeight: 600 }}
-                      />
-                    </Bar>
-                    <Bar dataKey="men" name="Men" radius={[0, 8, 8, 0]} barSize={28}>
-                      {pipelineData.map((_, index) => (
-                        <Cell key={`men-${index}`} fill="hsl(215 20% 35%)" />
-                      ))}
-                      <LabelList
-                        dataKey="men"
-                        position="right"
-                        formatter={(value: number) => `${value}%`}
-                        style={{ fill: "white", fontSize: 14, fontWeight: 600 }}
-                      />
-                    </Bar>
-                    <defs>
-                      <linearGradient id="prismGradient" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stopColor="hsl(280 80% 60%)" />
-                        <stop offset="100%" stopColor="hsl(190 80% 55%)" />
-                      </linearGradient>
-                    </defs>
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-
-              {/* Legend - Side */}
-              <div className="flex md:flex-col gap-4 md:gap-3">
-                <div className="flex items-center gap-2">
-                  <div
-                    className="w-4 h-4 rounded"
-                    style={{ background: "linear-gradient(90deg, hsl(280 80% 60%), hsl(190 80% 55%))" }}
+            {/* Chart */}
+            <div className="h-80 md:h-96 mb-12">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart
+                  data={pipelineData}
+                  layout="vertical"
+                  margin={{ top: 20, right: 40, left: 20, bottom: 20 }}
+                  barGap={8}
+                >
+                  <XAxis
+                    type="number"
+                    domain={[0, 100]}
+                    tick={{ fill: "white", fontSize: 12 }}
+                    axisLine={{ stroke: "hsl(215 20% 30%)" }}
+                    tickLine={{ stroke: "hsl(215 20% 30%)" }}
                   />
-                  <span className="text-white/80 text-sm">Women</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 rounded bg-slate-600" />
-                  <span className="text-white/80 text-sm">Men</span>
-                </div>
-              </div>
+                  <YAxis
+                    type="category"
+                    dataKey="stage"
+                    tick={{ fill: "white", fontSize: 14, fontWeight: 500 }}
+                    axisLine={false}
+                    tickLine={false}
+                    width={100}
+                  />
+                  <Bar dataKey="women" name="Women" radius={[0, 8, 8, 0]} barSize={28}>
+                    {pipelineData.map((_, index) => (
+                      <Cell key={`women-${index}`} fill="url(#prismGradient)" />
+                    ))}
+                    <LabelList
+                      dataKey="women"
+                      position="right"
+                      formatter={(value: number) => `${value}%`}
+                      style={{ fill: "white", fontSize: 14, fontWeight: 600 }}
+                    />
+                  </Bar>
+                  <Bar dataKey="men" name="Men" radius={[0, 8, 8, 0]} barSize={28}>
+                    {pipelineData.map((_, index) => (
+                      <Cell key={`men-${index}`} fill="hsl(215 20% 35%)" />
+                    ))}
+                    <LabelList
+                      dataKey="men"
+                      position="right"
+                      formatter={(value: number) => `${value}%`}
+                      style={{ fill: "white", fontSize: 14, fontWeight: 600 }}
+                    />
+                  </Bar>
+                  <defs>
+                    <linearGradient id="prismGradient" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stopColor="hsl(280 80% 60%)" />
+                      <stop offset="100%" stopColor="hsl(190 80% 55%)" />
+                    </linearGradient>
+                  </defs>
+                </BarChart>
+              </ResponsiveContainer>
             </div>
 
-            {/* Takeaway */}
-            <p className="text-center text-white/70 text-lg italic mb-10">
-              Women's representation drops sharply at higher levels, highlighting barriers to leadership.
-            </p>
+            {/* Legend */}
+            <div className="flex justify-center gap-8 mb-12">
+              <div className="flex items-center gap-2">
+                <div
+                  className="w-4 h-4 rounded"
+                  style={{ background: "linear-gradient(90deg, hsl(280 80% 60%), hsl(190 80% 55%))" }}
+                />
+                <span className="text-white/80 text-sm">Women</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 rounded bg-slate-600" />
+                <span className="text-white/80 text-sm">Men</span>
+              </div>
+            </div>
 
             {/* Metric Card */}
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center max-w-2xl mx-auto">

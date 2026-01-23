@@ -19,7 +19,7 @@ const OurPurpose = () => {
       <section className="pt-32 pb-16 px-6">
         <div className="container mx-auto max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
-            Bridging the AI Intelligence and Equity Gap
+            Bridging the AI Participation and Equity Gap
           </h1>
           <p className="text-lg text-muted-foreground">
             Artificial intelligence is everywhere — in healthcare, education, climate, jobs, and beyond. But without

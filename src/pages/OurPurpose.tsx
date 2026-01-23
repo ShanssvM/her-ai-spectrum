@@ -80,14 +80,14 @@ const OurPurpose = () => {
                   <XAxis
                     type="number"
                     domain={[0, 100]}
-                    tick={{ fill: "hsl(215 20% 65%)", fontSize: 12 }}
+                    tick={{ fill: "white", fontSize: 12 }}
                     axisLine={{ stroke: "hsl(215 20% 30%)" }}
                     tickLine={{ stroke: "hsl(215 20% 30%)" }}
                   />
                   <YAxis
                     type="category"
                     dataKey="stage"
-                    tick={{ fill: "hsl(215 20% 85%)", fontSize: 14, fontWeight: 500 }}
+                    tick={{ fill: "white", fontSize: 14, fontWeight: 500 }}
                     axisLine={false}
                     tickLine={false}
                     width={100}
@@ -100,7 +100,7 @@ const OurPurpose = () => {
                       dataKey="women"
                       position="right"
                       formatter={(value: number) => `${value}%`}
-                      style={{ fill: "hsl(280 80% 70%)", fontSize: 14, fontWeight: 600 }}
+                      style={{ fill: "white", fontSize: 14, fontWeight: 600 }}
                     />
                   </Bar>
                   <Bar dataKey="men" name="Men" radius={[0, 8, 8, 0]} barSize={28}>
@@ -111,7 +111,7 @@ const OurPurpose = () => {
                       dataKey="men"
                       position="right"
                       formatter={(value: number) => `${value}%`}
-                      style={{ fill: "hsl(215 20% 65%)", fontSize: 14, fontWeight: 600 }}
+                      style={{ fill: "white", fontSize: 14, fontWeight: 600 }}
                     />
                   </Bar>
                   <defs>

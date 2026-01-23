@@ -11,13 +11,11 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img src={logo} alt="Her AI Spectrum" className="w-10 h-10 rounded-xl object-cover" />
-              <span className="font-semibold text-lg text-foreground">
-                Her AI Spectrum
-              </span>
+              <span className="font-semibold text-lg text-foreground">Her AI Spectrum</span>
             </div>
             <p className="text-muted-foreground max-w-md leading-relaxed">
-              Advancing the full spectrum of AI by empowering women and
-              underrepresented voices in artificial intelligence.
+              Her AI Spectrum is an inclusive global community empowering women, girls, youth, and allies to learn,
+              lead, and co-create AI through education, and collaboration.
             </p>
             <div className="flex gap-4 mt-6">
               <a
@@ -42,34 +40,22 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <Link
-                  to="/"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/upcoming-events"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <Link to="/upcoming-events" className="text-muted-foreground hover:text-primary transition-colors">
                   Upcoming Events
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/past-events"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <Link to="/past-events" className="text-muted-foreground hover:text-primary transition-colors">
                   Past Events
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/testimonials"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <Link to="/testimonials" className="text-muted-foreground hover:text-primary transition-colors">
                   Testimonials
                 </Link>
               </li>
@@ -116,8 +102,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Her AI Spectrum. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            Made with <Heart size={14} className="text-primary" /> for the AI
-            community
+            Made with <Heart size={14} className="text-primary" /> for the AI community
           </p>
         </div>
       </div>

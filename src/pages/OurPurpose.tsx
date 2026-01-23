@@ -63,13 +63,9 @@ const OurPurpose = () => {
             className="rounded-3xl p-8 md:p-12"
             style={{ background: "linear-gradient(135deg, hsl(230 30% 12%) 0%, hsl(220 25% 18%) 100%)" }}
           >
-            <SectionHeader
-              title="The Leaky Pipeline Chart using McKinsey 2025 data"
-              subtitle=""
-              titleClassName="text-white"
-            />
+            <SectionHeader title="The Leaky Pipeline Chart using McKinsey 2025 data" subtitle="" titleClassName="text-white" />
             <h3 className="text-xl md:text-2xl font-serif text-white/90 text-center mt-6 mb-12">
-              AI is for everyone, but women are disappearing from the field.
+              Women represent nearly half of entry‑level roles but only about 29% at the executive level {McKinsey 2025 data}
             </h3>
 
             {/* Chart */}

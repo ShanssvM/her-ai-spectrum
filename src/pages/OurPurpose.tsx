@@ -49,6 +49,9 @@ const OurPurpose = () => {
               Without more women in these roles, AI systems are more likely to exhibit gender bias—currently,{" "}
               <span className="font-semibold text-foreground">up to 44% of AI systems show such bias</span>.
             </p>
+            <blockquote className="border-l-4 border-primary pl-6 italic text-lg md:text-xl text-muted-foreground leading-relaxed mt-8">
+              "Diversity isn't just a metric; it's the only way to build safe, unbiased AI."
+            </blockquote>
           </div>
         </div>
       </section>

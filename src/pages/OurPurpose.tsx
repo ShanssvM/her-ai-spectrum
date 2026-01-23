@@ -130,6 +130,11 @@ const OurPurpose = () => {
               </ResponsiveContainer>
             </div>
 
+            {/* Takeaway */}
+            <p className="text-center text-white/80 text-lg mb-8">
+              Women's representation drops sharply at higher levels, highlighting barriers to leadership.
+            </p>
+
             {/* Legend */}
             <div className="flex justify-center gap-8 mb-12">
               <div className="flex items-center gap-2">

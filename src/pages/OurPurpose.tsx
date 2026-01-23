@@ -158,6 +158,45 @@ const OurPurpose = () => {
         </div>
       </section>
 
+      {/* References Section */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-4xl">
+          <SectionHeader title="References" subtitle="" />
+          <ul className="mt-8 space-y-4 text-muted-foreground">
+            <li>
+              <a
+                href="https://hai.stanford.edu/ai-index/2025-ai-index-report"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors underline underline-offset-4"
+              >
+                Stanford HAI: Artificial Intelligence Index Report 2025
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/women-and-generative-ai.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors underline underline-offset-4"
+              >
+                Deloitte Insights: Women and Generative AI: Closing Gaps and Building Trust (2025)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors underline underline-offset-4"
+              >
+                McKinsey & Company: The State of AI in 2025: Global Survey
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

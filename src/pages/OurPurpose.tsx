@@ -18,9 +18,7 @@ const OurPurpose = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6">
         <div className="container mx-auto max-w-4xl text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
-            Bridging the AI Intelligence and Equity Gap
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">Our Purpose</h1>
           <p className="text-lg text-muted-foreground">
             Artificial intelligence is everywhere — in healthcare, education, climate, jobs, and beyond. But without
             diverse perspectives, AI can overlook real problems and reinforce existing biases.
@@ -65,7 +63,11 @@ const OurPurpose = () => {
             className="rounded-3xl p-8 md:p-12"
             style={{ background: "linear-gradient(135deg, hsl(230 30% 12%) 0%, hsl(220 25% 18%) 100%)" }}
           >
-            <SectionHeader title="The Leaky Pipeline" subtitle="" titleClassName="text-white" />
+            <SectionHeader
+              title="The Leaky Pipeline Chart using McKinsey 2025 data"
+              subtitle=""
+              titleClassName="text-white"
+            />
             <h3 className="text-xl md:text-2xl font-serif text-white/90 text-center mt-6 mb-12">
               AI is for everyone, but women are disappearing from the field.
             </h3>
